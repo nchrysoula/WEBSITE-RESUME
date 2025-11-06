@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chrysoula Dera - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #181F23;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #E3E6E9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: #232B30;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+            padding: 32px;
+            animation: fadeIn 1.2s ease;
+        }
+        @keyframes fadeIn {
+            from { transform: translateY(30px); opacity: 0;}
+            to {   transform: translateY(0); opacity: 1;}
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #2E393F;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 32px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.21);
+            transition: transform 0.4s;
+        }
+        .photo:hover { transform: scale(1.04);}
+        .title h1 {
+            font-size: 2.1em;
+            margin: 0;
+            color: #3EB489; /* green accent */
+        }
+        .contact {
+            margin-top: 2px;
+        }
+        .section {
+            margin-bottom: 28px;
+        }
+        .section h2 {
+            font-size: 1.19em;
+            color: #3EB489; /* green accent */
+            margin-bottom: 8px;
+            letter-spacing: 0.1em;
+        }
+        ul {
+            padding-left: 18px;
+        }
+        ul li {
+            margin-bottom: 6px;
+        }
+        a, a:visited {
+            color: #4CD674;
+            text-decoration: underline;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #3EB489;
+            color: #181F23;
+            padding: 10px 24px;
+            margin-top: 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+        .download-btn:hover {
+            background: #2EA06A;
+        }
+        .skills-bars { margin-top:12px; }
+        .skills-bars div {
+            margin-bottom: 14px;
+            font-size: 1em;
+        }
+        .bar-bg { background:#2E393F; border-radius:8px; width:220px; height:10px; margin:3px 0;}
+        .bar-fill { background:linear-gradient(90deg,#3EB489 70%,#2EA06A 100%); border-radius:8px; height:10px; transition:width 1.5s;}
+        .fade-in {
+            opacity: 0; 
+            transform: translateY(20px);
+            transition: all 0.7s cubic-bezier(0.4,0,0.2,1);
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        footer {
+            border-top: 1px solid #2E393F;
+            text-align: center;
+            padding: 15px 0 5px;
+            color: #999;
+            font-size: 0.98em;
+            margin-top: 25px;
+            letter-spacing: 0.07em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header fade-in">
+            <img src="image.jpg" alt="Chrysoula Dera" class="photo">
+            <div class="title">
+                <h1>Chrysoula Dera</h1>
+                <div class="contact">
+                    Athens, Greece &bull; chrysoula@email.com <br>
+                    <b>Phone:</b> 6988592217 &bull; <b>LinkedIn:</b> 
+                    <a href="https://linkedin.com/in/chrysoula" target="_blank">linkedin.com/in/chrysoula</a>
+                </div>
+                <a href="ResumeChrysoulaDera.pdf" download class="download-btn">Download CV (PDF)</a>
+            </div>
+        </div>
+        <div class="section fade-in">
+            <h2>Summary</h2>
+            <p>
+                Motivated and detail-oriented IT professional with hands-on expertise in dispatch operations, technical support, and customer service. Passionate about technology, learning, and problem solving, with experience supporting partners and systems at efood.
+            </p>
+        </div>
+        <div class="section fade-in">
+            <h2>Skills</h2>
+            <ul>
+                <li>Teamwork and collaboration</li>
+                <li>Customer service</li>
+                <li>Technical troubleshooting</li>
+                <li>Proficient in Microsoft Office Suite (Excel, Word, PowerPoint)</li>
+                <li>Attention to detail</li>
+                <li>Problem-solving</li>
+            </ul>
+            <div class="skills-bars">
+                <div>Technical troubleshooting
+                    <div class="bar-bg"><div class="bar-fill" style="width: 90%"></div></div>
+                </div>
+                <div>Customer service
+                    <div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div>
+                </div>
+                <div>Teamwork & Collaboration
+                    <div class="bar-bg"><div class="bar-fill" style="width: 95%"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="section fade-in">
+            <h2>Experience</h2>
+            <b>Dispatch Department Agent, efood</b><br>
+            March 2025 – Present
+            <ul>
+                <li>Coordinated and dispatched orders, achieving prompt delivery and elevated partner satisfaction.</li>
+                <li>Analyzed and resolved technical and operational issues in dispatch systems.</li>
+                <li>Identified bugs, escalated system issues, and supported compliance processes.</li>
+            </ul>
+            <b>Sales Department Agent (Kaizen – Stoiximan), Teleperformance Greece</b><br>
+            September 2024 – February 2025
+            <ul>
+                <li>Managed outbound sales calls, promoted Stoiximan offers, regularly exceeded team targets.</li>
+                <li>Built communication and negotiation skills in a fast-paced setting.</li>
+            </ul>
+            <b>Technical Support Intern, Compuland AE Karditsas</b><br>
+            June 2022 – August 2022
+            <ul>
+                <li>Provided hardware and software tech support, maintained systems, used SQL databases for troubleshooting.</li>
+            </ul>
+        </div>
+        <div class="section fade-in">
+            <h2>Education</h2>
+            <ul>
+                <li>Student at Department of Informatics and Telecommunications, University of Thessaly..</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section fade-in" id="mini-game" style="text-align:center; margin-top:36px;">
+        
+        <h2>Mini Clicker Game</h2>
+        <p>Show you're human! Click the button as many times as you like.</p>
+        <button id="clicker-btn" style="padding:14px 28px; background:#3EB489; color:#181F23; border:none; border-radius:7px; font-size:1.1em; font-weight:bold; cursor:pointer; transition: background 0.3s;">Click me!</button>
+        <div style="margin-top:10px; font-size:1.2em;">
+            Total Clicks: <span id="click-count">0</span>
+        </div>
+        <div id="click-message" style="margin-top:10px; font-size:1em; color:#4CD674;"></div>
+        <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 10000; display:none;"></canvas>
+
+    </div>
+
+
+        <footer>
+            &copy; 2025 Chrysoula Dera &bull; All rights reserved.
+        </footer>
+
+        <script>
+        // JS Fade-in animation on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -15px 0px" };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => { appearOnScroll.observe(fader); });
+
+        // Animate skill bars on load
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+            let w = bar.style.width;
+            bar.style.width = "0";
+            setTimeout(()=>{ bar.style.width = w; }, 501);
+        });
+
+                // Mini Clicker Game JS
+       // Confetti animation on 100 clicks
+        const confettiCanvas = document.getElementById('confetti-canvas');
+        const ctx = confettiCanvas.getContext('2d');
+        let confettiElements = [];
+        let animationFrameId;
+
+        function resizeCanvas() {
+            confettiCanvas.width = window.innerWidth;
+            confettiCanvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class ConfettiParticle {
+            constructor() {
+                this.x = Math.random() * confettiCanvas.width;
+                this.y = Math.random() * confettiCanvas.height - confettiCanvas.height;
+                this.size = 7 + Math.random() * 5;
+                this.speed = 2 + Math.random() * 3;
+                this.wind = (Math.random() - 0.5) * 2;
+                this.color = `hsl(${Math.random()*360}, 70%, 60%)`;
+                this.angle = Math.random() * 2 * Math.PI;
+                this.spin = 0.15 * (Math.random() > 0.5 ? 1 : -1);
+            }
+            update() {
+                this.y += this.speed;
+                this.x += this.wind;
+                this.angle += this.spin;
+                if (this.y > confettiCanvas.height) {
+                    this.y = -this.size;
+                    this.x = Math.random() * confettiCanvas.width;
+                }
+            }
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle);
+                ctx.fillStyle = this.color;
+                ctx.fillRect(-this.size/2, -this.size/2, this.size, this.size);
+                ctx.restore();
+            }
+        }
+
+        function startConfetti() {
+            confettiElements = [];
+            for(let i=0; i<150; i++) {
+                confettiElements.push(new ConfettiParticle());
+            }
+            confettiCanvas.style.display = 'block';
+            animateConfetti();
+            setTimeout(stopConfetti, 8000);
+        }
+
+        function animateConfetti() {
+            ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            confettiElements.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            animationFrameId = requestAnimationFrame(animateConfetti);
+        }
+
+        function stopConfetti() {
+            cancelAnimationFrame(animationFrameId);
+            ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            confettiCanvas.style.display = 'none';
+        }
+
+        const clickBtn = document.getElementById('clicker-btn');
+        const clickDisplay = document.getElementById('click-count');
+        const clickMsg = document.getElementById('click-message');
+        let clickCount = 0;
+
+        clickBtn.onclick = function () {
+            clickCount++;
+            clickDisplay.textContent = clickCount;
+            if (clickCount >= 10 && clickCount < 30) {
+                clickMsg.textContent = "Maybe you are a human.. keep clicking 🤔";
+            } else if (clickCount === 67) {
+                clickMsg.textContent = "";
+                alert("Congrats! 🎉 You reached 67 clicks! You are a human for sure");
+                startConfetti();
+            } else if (clickCount >= 30 && clickCount !== 67) {
+                clickMsg.textContent = "You got this 🫡";
+            } else {
+                clickMsg.textContent = "";
+            }
+        }
+
+    </script>
+</body>
+</html>
