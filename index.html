@@ -69,19 +69,20 @@
             color: #4CD674;
             text-decoration: underline;
         }
-        .download-btn {
+       .download-btn {
             display: inline-block;
-            background: #3EB489;
-            color: #181F23;
+            background: #3EB489; /* soft jade green */
+            color:#fff !important;
             padding: 10px 24px;
-            margin-top: 15px;
             border-radius: 6px;
             font-weight: bold;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.15s;
             text-decoration: none;
+            margin-top: 10px;
         }
         .download-btn:hover {
-            background: #2EA06A;
+            background: linear-gradient(90deg, #3EB489 70%, #2EA06A 100%);
+            transform: scale(1.06);
         }
         .skills-bars { margin-top:12px; }
         .skills-bars div {
@@ -114,16 +115,18 @@
 <div class="container">
      <div class="header fade-in">
          <img src="image.jpg" alt="Chrysoula Dera" class="photo">
-            <div class="title">
-                <h1>Chrysoula Dera</h1>
-                <div class="contact">
-                    Athens, Greece<br>
-                <b>LinkedIn:</b>
-                <a href="https://www.linkedin.com/in/chrysouladera/" target="_blank">linkedin.com/in/chrysouladera</a>
+         <div class="title">
+            <h1>Chrysoula Dera</h1>
+            <div class="contact">
+                Athens, Greece<br>
+                
+            </div>
+            <a href="https://www.linkedin.com/in/chrysouladera/" target="_blank" class="download-btn" style="margin-top: 10px;">
+                🔗Connect on LinkedIn🔗
+        </a>
         </div>
-        <a href="ResumeChrysoulaDera.pdf" download class="download-btn">Download CV (PDF)</a>
     </div>
-    </div>
+    
 
         
         <div class="section fade-in">
@@ -316,4 +319,3 @@
     </script>
 </body>
 </html>
-
